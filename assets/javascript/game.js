@@ -16,9 +16,9 @@ var lossesText = document.getElementById("losses-text");
 var guessText = document.getElementById("guesses-text");
 
 // Display the user and computer guesses, and wins/losses/ties.
-winsText.textContent = "wins: " + wins;
-lossesText.textContent = "losses: " + losses;
-guessText.textContent = "guesses: " + guesses;
+winsText.textContent = "Wins: " + wins;
+lossesText.textContent = "Losses: " + losses;
+guessText.textContent = "Guesses: " + guesses;
 
 // This function selects a random letter for the computer
 function random() {
@@ -73,8 +73,8 @@ document.onkeyup = function (event) {
     directionsText.textContent = "";
 
     // Display the user and computer guesses, and wins/losses/ties.
-    winsText.textContent = "wins: " + wins;
-    lossesText.textContent = "losses: " + losses;
-    guessText.textContent = "guesses: " + guesses;
+    winsText.textContent = "Wins: " + wins;
+    lossesText.textContent = "Losses: " + losses;
+    guessText.textContent = "Guesses: " + guesses;
 }
 
