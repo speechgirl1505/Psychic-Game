@@ -31,7 +31,7 @@ function random() {
 var computerGuess = random();
 console.log(computerGuess);
 
-userChoiceText.textContent = "Your Letter: ";
+userChoiceText.textContent = "Your Letters: ";
 
 // This function is run whenever the user presses a key.
 document.onkeyup = function (event) {
@@ -50,6 +50,8 @@ document.onkeyup = function (event) {
         guesses = 9;
         computerGuess = random();
         guessText.textContent = " ";
+        userChoiceText.textContent = "Your Letter: ";
+            console.log("reset and guessText is: " + guessText);
     } else {
         userChoiceText.textContent += userGuess;
         
