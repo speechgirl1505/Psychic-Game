@@ -1,8 +1,8 @@
-// Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+// Creates an array that lists out all of the options
 //var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];;
 var computerChoices = "abcdefghijklmnopqrstuvwxyz";
 
-// Creating variables to hold the number of wins, losses, and ties. They start at 0.
+
 var wins = 0;
 var losses = 0;
 var guesses = 9;
@@ -40,9 +40,8 @@ document.onkeyup = function (event) {
     var userGuess = event.key;
     console.log(userGuess);
 
-    // Reworked our code from last step to use "else if" instead of lots of if statements.
     
-    // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
+    // This logic determines the outcome of the game, and increments the appropriate number
     if ( userGuess === computerGuess) {
         wins++;
 
@@ -74,7 +73,7 @@ document.onkeyup = function (event) {
     // Hide the directions
     directionsText.textContent = "";
 
-    // Display the user and computer guesses, and wins/losses/ties.
+    // Display the user and computer guesses, and wins/losses/guesses.
     winsText.textContent = "Wins: " + wins;
     lossesText.textContent = "Losses: " + losses;
     guessText.textContent = "Guesses: " + guesses;
